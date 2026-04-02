@@ -1,0 +1,13 @@
+{
+  "experimentId": "exp_0001",
+  "createdAt": "2025-09-11T00:00:00.000Z",
+  "description": "Volatility scan baseline",
+  "parameters": {
+    "tokenSymbol": "TKN",
+    "analysisWindowMinutes": 60,
+    "volatilityThreshold": 0.2
+  },
+  "status": "draft",
+  "results": null,
+  "notes": ""
+}

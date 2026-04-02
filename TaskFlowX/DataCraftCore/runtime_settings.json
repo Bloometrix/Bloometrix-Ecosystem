@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "projectName": "CoreLab",
+  "appId": "core-lab",
+  "environment": "development",
+  "timezone": "UTC",
+
+  "logging": {
+    "level": "debug",
+    "destinations": ["console", "file"],
+    "filePath": "./logs/app.log",
+    "consoleFormat": "json",
+    "rotation": { "maxSizeMB": 10, "maxFiles": 5, "compress": true }
+  },
+
+  "features": {
+    "enableDiagnostics": true,
+    "enableRealTimeAlerts": false,
+    "enableMetrics": true
+  }
+}
