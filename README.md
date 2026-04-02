@@ -1,244 +1,421 @@
-[![image](https://github.com/user-attachments/assets/027ccbc1-c6c4-46a0-aa62-7b89d4e62f24)](https://www.callstack.com/open-source?utm_campaign=generic&utm_source=github&utm_medium=referral&utm_content=react-native-ai)
+<p align="center">
+<img width="400" height="400" alt="hf_20260309_045718_0a075c8b-05d0-4610-8f94-1dfe0136d849" src="https://github.com/Bloometrix/Bloometrix/blob/main/bloom-removebg-preview.png" />
+<a id="readme-top"></a>
 
-# React Native AI
+# Boometrix Console
 
-A collection of on-device AI primitives for React Native with first-class Vercel AI SDK support. Run AI models directly on users' devices for privacy-preserving, low-latency inference without server costs.
+> **Boometrix Console** is a unified workspace for on-chain analytics, AI agents, alerts, and automation  
+> Explore tokens, inspect wallets, run heavy analytics, launch agents, and route events into your own stack — all without building the data layer yourself
+
+---
+
+### 🚀 Quick Links
+
+[![Web App](https://img.shields.io/badge/Web%20App-Open-3b82f6?style=for-the-badge&logo=googlechrome&logoColor=white)](https://твоя-web-app-ссылка)
+
+[![Telegram Mini App](https://img.shields.io/badge/Telegram%20Mini%20App-Launch-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/твой_мини_апп)
+
+[![Docs](https://img.shields.io/badge/Docs-Read-8b5cf6?style=for-the-badge&logo=readthedocs&logoColor=white)](https://твои-docs-ссылка)
+
+[![X.com](https://img.shields.io/badge/X.com-Follow-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/твой_аккаунт)
+
+[![Telegram Community](https://img.shields.io/badge/Telegram%20Community-Join-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/твоя_группа_или_канал)
+
+---
+
+## Overview
+
+**Boometrix Console** is the front-end layer for analytics, agents, event routing, and automated workflows
+
+It is built for traders, funds, analytics teams, researchers, and developers who need *real on-chain visibility* plus *AI-native execution logic* in one place
+
+Instead of splitting your flow between dashboards, scripts, bots, and manual checks, Boometrix brings everything into a single system:
+
+- **Market data**
+- **On-chain analytics**
+- **AI agents**
+- **Long-running jobs**
+- **Alerts and webhooks**
+- **Workspace-based collaboration**
+
+> [!IMPORTANT]
+> **Console = API = Protocol**  
+> Every meaningful action in the UI is designed to map to an API call, job, or automation flow
+
+> [!TIP]
+> Boometrix is built to keep the *surface simple* while leaving the real power in queries, agent configs, saved views, and event pipelines
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
+
+## What You Can Do
+
+Use Boometrix to turn raw market and wallet activity into workflows you can actually use
+
+### Core workflows
+
+- Track **tokens**, **wallets**, and **cohorts** with unified metrics
+- Inspect **holder concentration**, **net flows**, **whale behavior**, and **PnL**
+- Run **AI-powered agents** for token scans, wallet summaries, portfolio checks, and research digests
+- Launch **async analytics jobs** and **backtests** on indexed historical data
+- Save reusable query templates and pin them as **Saved Views**
+- Route alerts into **Telegram**, **Discord**, **email**, or your own **webhooks**
+- Organize usage inside **workspace-scoped billing, keys, permissions, and automations**
+
+### Product philosophy
+
+Boometrix is designed around a few practical ideas:
+
+- ***Data-first, AI-native***  
+  On-chain and market data are the foundation, while AI sits directly on top as an operational layer
+
+- ***Automation over manual work***  
+  If a process can be formalized, it should be turned into a repeatable signal, report, event, or agent workflow
+
+- ***Agents as first-class actors***  
+  Agents do not exist as a chat gimmick — they observe, reason, summarize, and trigger downstream actions
+
+> [!NOTE]
+> Boometrix agents **analyze and suggest**  
+> Final transaction approval still remains with the user wallet via **Jupiter**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
+
+## Example Scenarios
+
+### 1) Smart money monitoring
+
+You track a shortlist of high-performing wallets and want to know when one of them rotates into a new token
+
+**With Boometrix you can:**
+
+- watch wallet flows
+- detect large inflows and outflows
+- run a wallet agent for quick interpretation
+- push the result into Telegram or your internal backend
+
+### 2) Token due diligence
+
+You find a token with fresh activity and want a fast decision framework before spending more time on it
+
+**With Boometrix you can:**
+
+- inspect liquidity and holder concentration
+- review whale participation and exchange flows
+- run a token risk agent
+- save the result as a reusable view for later monitoring
+
+### 3) Portfolio health check
+
+You want a daily summary across several connected wallets without opening five different apps
+
+**With Boometrix you can:**
+
+- aggregate exposure across wallets
+- review performance and concentration
+- generate a portfolio digest
+- send the result to Telegram, Discord, or email on schedule
+
+### 4) Quant and research workflow
+
+Your team needs historical scans and repeatable analytics without building a custom indexing stack from scratch
+
+**With Boometrix you can:**
+
+- create parameterized templates
+- run long backtests and heavy jobs
+- export structured results
+- feed downstream BI tools, dashboards, and bots
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
 
 ## Features
 
-- 🚀 **Instant AI** - Use built-in system models immediately without downloads
-- 🔒 **Privacy-first** - All processing happens on-device, data stays local
-- 🎯 **Vercel AI SDK compatible** - Drop-in replacement with familiar APIs
-- 🎨 **Complete toolkit** - Text generation, embeddings, transcription, speech synthesis
+### Analytics and market intelligence
 
-## AI SDK Compatibility
+- **Market & order book data**
+- **OHLCV candles and ticker data**
+- **Token analytics**
+- **Wallet analytics**
+- **Cohort and smart money tracking**
+- **Flow monitoring and whale detection**
 
-| React Native AI | AI SDK |
-| --------------- | ------ |
-| 0.11 and below  | v5     |
-| 0.12 and above  | v6     |
+### Agents and automation
 
-## DevTools
+- **Token risk agents**
+- **Wallet behavior agents**
+- **Portfolio health agents**
+- **Research and narrative digest agents**
+- **Scheduled automations**
+- **Webhook-based event routing**
 
-![AI SDK Profiler preview](website/src/public/dev-tools-preview.png)
+### Workspace and delivery layer
 
-The AI SDK Profiler plugin captures OpenTelemetry spans from Vercel AI SDK
-requests and surfaces them in Rozenite DevTools. DevTools are runtime
-agnostic, so they work with on-device and remote runtimes.
+- **Multiple workspaces per user**
+- **Role-based access control**
+- **Workspace-scoped API keys**
+- **Saved Views and reusable query templates**
+- **Telegram mini app and chat-based bot delivery**
+- **BI export and data pipeline support**
 
-```bash
-npm install @react-native-ai/dev-tools
-```
+> [!WARNING]
+> Credits are consumed by API calls, analytics queries, agents, and heavy jobs  
+> High-cost actions should always surface usage clearly in the UI
 
-Rozenite must be installed and enabled in your app. See the
-[Rozenite getting started guide](https://www.rozenite.dev/docs/getting-started).
+### Snapshot of key system capabilities
 
-## Available Providers
+| Area | What it covers |
+|---|---|
+| Analytics | Tokens, wallets, cohorts, flows, performance |
+| Agents | Token, wallet, portfolio, research |
+| Automation | Schedules, event triggers, webhooks |
+| Delivery | Console, Telegram Mini App, Discord, API |
+| Collaboration | Workspaces, roles, shared views |
+| Monetization | Credit model with $BLMX plan flow |
 
-| Provider        | Built-in | Platforms    | Runtime                                                             | Description                                                |
-| --------------- | -------- | ------------ | ------------------------------------------------------------------- | ---------------------------------------------------------- |
-| [Apple](#apple) | ✅ Yes   | iOS          | [Apple](https://developer.apple.com/documentation/FoundationModels) | Apple Foundation Models, embeddings, transcription, speech |
-| [Llama](#llama) | ❌ No    | iOS, Android | [llama.rn](https://github.com/mybigday/llama.rn)                    | Run GGUF models via llama.rn                               |
-| [MLC](#mlc)     | ❌ No    | iOS, Android | [MLC LLM](https://github.com/mlc-ai/mlc-llm)                        | Run open-source LLMs via MLC runtime                       |
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
----
-
-### Apple
-
-Native integration with Apple's on-device AI capabilities. **Built-in** - no model downloads required, uses system models.
-
-- **Text Generation** - Apple Foundation Models for chat and completion
-- **Embeddings** - NLContextualEmbedding for 512-dimensional semantic vectors
-- **Transcription** - SpeechAnalyzer for fast, accurate speech-to-text
-- **Speech Synthesis** - AVSpeechSynthesizer for natural text-to-speech with system voices
-
-#### Installation
-
-```bash
-npm install @react-native-ai/apple
-```
-
-No additional linking needed, works immediately on iOS devices (autolinked).
-
-#### Usage
-
-```typescript
-import { apple } from '@react-native-ai/apple'
-import {
-  generateText,
-  embed,
-  experimental_transcribe as transcribe,
-  experimental_generateSpeech as speech,
-} from 'ai'
-
-// Text generation with Apple Intelligence
-const { text } = await generateText({
-  model: apple(),
-  prompt: 'Explain quantum computing',
-})
-
-// Generate embeddings
-const { embedding } = await embed({
-  model: apple.textEmbeddingModel(),
-  value: 'Hello world',
-})
-
-// Transcribe audio
-const { text } = await transcribe({
-  model: apple.transcriptionModel(),
-  audio: audioBuffer,
-})
-
-// Text-to-speech
-const { audio } = await speech({
-  model: apple.speechModel(),
-  text: 'Hello from Apple!',
-})
-```
-
-#### Availability
-
-| Feature          | iOS Version | Additional Requirements    |
-| ---------------- | ----------- | -------------------------- |
-| Text Generation  | iOS 26+     | Apple Intelligence device  |
-| Embeddings       | iOS 17+     | -                          |
-| Transcription    | iOS 26+     | -                          |
-| Speech Synthesis | iOS 13+     | iOS 17+ for Personal Voice |
-
-See the [Apple documentation](https://react-native-ai.dev/docs/apple/getting-started) for detailed setup and usage guides.
 
 ---
 
-### Llama
+## Getting Started
 
-Run any GGUF model on-device using [llama.rn](https://github.com/mybigday/llama.rn). **Requires download** - models are downloaded from HuggingFace.
+### 1) Create your workspace
 
-#### Supported Features
+- Sign in
+- Create or join a workspace
+- Configure roles, usage scope, and API access
 
-| Feature         | Method                       | Description                                   |
-| --------------- | ---------------------------- | --------------------------------------------- |
-| Text Generation | `llama.languageModel()`      | Chat, completion, streaming, reasoning models |
-| Embeddings      | `llama.textEmbeddingModel()` | Text embeddings for RAG and similarity search |
-| Speech          | `llama.speechModel()`        | Text-to-speech with vocoder models            |
+### 2) Connect your wallet
 
-#### Installation
+Your wallet acts as the main identity layer across the web app, mini app, and extension
 
-```bash
-npm install @react-native-ai/llama llama.rn react-native-blob-util
+### 3) Set your default context
+
+Choose:
+
+- default network
+- quote currency
+- watchlists
+- timezone
+- notification channels
+
+### 4) Run your first workflow
+
+A typical first flow looks like this:
+
+```text
+Connect wallet
+→ open token or wallet analytics
+→ run an agent
+→ review structured output
+→ save the result
+→ attach an alert or webhook
 ```
 
-#### Usage
+### 5) Move into automation
 
-```typescript
-import { llama } from '@react-native-ai/llama'
-import { generateText, streamText } from 'ai'
+Once your first manual flow works, convert it into a repeatable system using playbooks, schedules, and event routing
 
-// Create model instance (Model ID format: "owner/repo/filename.gguf")
-const model = llama.languageModel(
-  'ggml-org/SmolLM3-3B-GGUF/SmolLM3-Q4_K_M.gguf'
-)
+#### Example sync agent request
 
-// Download from HuggingFace (with progress)
-await model.download((progress) => {
-  console.log(`Downloading: ${progress.percentage}%`)
+```js
+fetch('https://api.bloometrix.com/v1/agents/agt_123/run', {
+  method: 'POST',
+  headers: {
+    'Authorization': 'Bearer YOUR_API_KEY',
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    input: {
+      mode: 'token',
+      chain: 'solana',
+      tokenAddress: 'So1111...',
+      lookbackDays: 7
+    }
+  })
 })
-
-// Initialize model (loads into memory)
-await model.prepare()
-
-// Generate text
-const { text } = await generateText({
-  model,
-  messages: [
-    { role: 'system', content: 'You are a helpful assistant.' },
-    { role: 'user', content: 'Write a haiku about coding.' },
-  ],
-})
-
-// Cleanup when done
-await model.unload()
 ```
 
-#### Model Compatibility
+#### Example async job request
 
-Any GGUF model from HuggingFace can be used. Use the format `owner/repo/filename.gguf` as the model ID. Popular choices include:
+```js
+fetch('https://api.bloometrix.com/v1/jobs', {
+  method: 'POST',
+  headers: {
+    'Authorization': 'Bearer YOUR_API_KEY',
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    type: 'backtest',
+    name: 'solana-rotation-q1',
+    params: {
+      chain: 'solana',
+      from: '2026-01-01T00:00:00Z',
+      to: '2026-03-01T00:00:00Z'
+    },
+    webhookUrl: 'https://your-backend.com/webhooks/bloometrix/jobs'
+  })
+})
+```
 
-- `ggml-org/SmolLM3-3B-GGUF/SmolLM3-Q4_K_M.gguf`
-- `bartowski/Llama-3.2-3B-Instruct-GGUF/Llama-3.2-3B-Instruct-Q4_K_M.gguf`
-- `Qwen/Qwen2.5-1.5B-Instruct-GGUF/qwen2.5-1.5b-instruct-q4_k_m.gguf`
+> [!TIP]
+> Separate your API keys by environment  
+> Use different keys for **dev**, **staging**, and **production**
 
-📚 **[View full Llama documentation →](https://react-native-ai.dev/docs/llama/getting-started)**
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ---
 
-### MLC
+## Inside the Flow
 
-Run popular open-source LLMs directly on-device using [MLC LLM](https://github.com/mlc-ai/mlc-llm)'s optimized runtime. **Requires download** - models must be downloaded before use.
+Instead of a generic “how it works” block, this section shows how value moves through the system
 
-#### Installation
-
-```bash
-npm install @react-native-ai/mlc
+```mermaid
+flowchart LR
+    A[Wallet or Workspace Context] --> B[Analytics Layer]
+    B --> C[Saved Views and Templates]
+    B --> D[AI Agents]
+    C --> E[Alerts and Conditions]
+    D --> E
+    E --> F[Telegram / Discord / Email]
+    E --> G[Webhooks / Backend]
+    D --> H[Jupiter Swap Intent]
+    H --> I[User Wallet Approval]
 ```
 
-Requires the "Increased Memory Limit" capability in Xcode. See the [getting started guide](https://react-native-ai.dev/docs/mlc/getting-started) for setup instructions.
+### Why this structure matters
 
-#### Usage
+**Boometrix does not stop at dashboards**
 
-```typescript
-import { mlc } from '@react-native-ai/mlc'
-import { generateText } from 'ai'
+It is designed so that one insight can evolve into a reusable system:
 
-// Create model instance
-const model = mlc.languageModel('Llama-3.2-3B-Instruct')
+- a token check becomes a saved workflow
+- a wallet scan becomes a scheduled digest
+- an agent result becomes a webhook event
+- a repeated analysis becomes a backtest or playbook
 
-// Download and prepare model (one-time setup)
-await model.download()
-await model.prepare()
+### Operational model
 
-// Generate response with Llama via MLC engine
-const { text } = await generateText({
-  model,
-  prompt: 'Explain quantum computing',
-})
+```text
+Data enters through market feeds, indexed on-chain activity, and tracked wallet behavior
+
+That data becomes templates, dashboards, and agent-ready context
+
+Agents transform structured inputs into readable summaries plus machine-usable metrics
+
+Events, alerts, and jobs move those outputs into bots, dashboards, and internal systems
 ```
 
-#### Available Models
+> [!IMPORTANT]
+> The execution boundary is deliberate  
+> Boometrix can prepare a swap intent through **Jupiter**, but the final approval always happens in the **user wallet**
 
-| Model ID                 | Size   |
-| ------------------------ | ------ |
-| `Llama-3.2-3B-Instruct`  | ~2GB   |
-| `Phi-3-mini-4k-instruct` | ~2.5GB |
-| `Mistral-7B-Instruct`    | ~4.5GB |
-| `Qwen2.5-1.5B-Instruct`  | ~1GB   |
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
+
+## FAQ
+
+### Is Boometrix only for traders
+
+**No**  
+It is useful for traders, funds, analytics teams, product teams, and developers who need on-chain and market intelligence with automation
+
+### Do I need to run my own nodes
+
+**No**  
+Boometrix handles the node and indexing layer so you can consume normalized data through the Console and APIs
+
+### Does everything in the Console exist in the API
+
+**Yes**  
+The product is designed around a shared model where UI actions map to APIs, jobs, templates, or automations
+
+### Can I get real-time alerts
+
+**Yes**  
+You can define conditions and route notifications into in-app surfaces, chat tools, email, or custom webhooks
+
+### Do agents execute swaps automatically
+
+**No**  
+Agents analyze and suggest  
+Any swap action still requires explicit confirmation from the user wallet
+
+### How do credits work
+
+Each action consumes credits based on cost and complexity  
+Light token checks are cheap, while wallet analytics, research digests, and heavy jobs consume more
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
+
+## Roadmap
+
+- [x] Core Console structure
+- [x] Workspace model and role-based access
+- [x] Token and wallet analytics
+- [x] Agent runs and async jobs
+- [x] Alerts, webhooks, and event streams
+- [ ] Public visual dashboard for burn, supply, and treasury flow
+- [ ] Expanded playbook library with more presets
+- [ ] Multi-language support
+  - [ ] Chinese
+  - [ ] Spanish
+
+See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features and improvements
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
+
+## Architecture Notes
+
+### Identity and access
+
+- Wallet-first identity across product surfaces
+- Workspace-scoped billing, keys, and permissions
+- Role-based access for owners, admins, and analysts
+
+### Protocol value flow
+
+- Paid plans and top-ups are purchased in **$BLMX**
+- **80%** of received BLMX is burned
+- **20%** is routed to the treasury
+- A public dashboard can expose burn totals, treasury balance, and supply tracking
+
+### Data and security
+
+- API keys are workspace-scoped
+- Sensitive values should be stored securely and rotated regularly
+- Webhook events are signed with **HMAC-SHA256**
+- Private keys and seed phrases are **never stored**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
+
+## Disclaimer
+
+> [!CAUTION]
+> Boometrix provides analytics, automation infrastructure, and AI-generated summaries for research and operational support  
+> It does **not** guarantee outcomes, and nothing in the product should be treated as financial advice
 
 > [!NOTE]
-> MLC requires iOS devices with sufficient memory (1-8GB depending on model). The prebuilt runtime supports the models listed above. For other models or custom configurations, you'll need to recompile the MLC runtime from source.
-
-## Documentation
-
-Comprehensive guides and API references are available at [react-native-ai.dev](https://react-native-ai.dev).
-
-## Contributing
-
-Read the [contribution guidelines](/CONTRIBUTING.md) before contributing.
-
-## Agent skills
-
-This repository provides agent skills to help you integrate and use the packages. You can easily install them with:
-
-`npx skills add https://github.com/callstackincubator/react-native-ai --skill react-native-ai-skills`
-
-or manually by copying the `skills/` directory in your `.cursor/` directory.
-
-## Made with ❤️ at Callstack
-
-**react-native-ai** is an open source project and will always remain free to use. If you think it's cool, please star it 🌟.
-
-[Callstack][callstack-readme-with-love] is a group of React and React Native geeks, contact us at [hello@callstack.com](mailto:hello@callstack.com) if you need any help with these or just want to say hi!
+> Agents analyze and structure information  
+> They do not replace your own judgment, execution controls, or wallet approval flow
 
 ---
 
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
+## Support
 
-[callstack-readme-with-love]: https://callstack.com/?utm_source=github.com&utm_medium=referral&utm_campaign=react-native-ai&utm_term=readme-with-love
+For docs, onboarding, integrations, and updates, use the links at the top of this README
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
